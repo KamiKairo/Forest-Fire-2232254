@@ -17,6 +17,7 @@ public class ForestFire3D : MonoBehaviour
     public int grassChance; // the percentage chance a cell is assigned as grass
 
     public GameObject cellPrefab; // gameobject prefab used to represent a cell on the grid   
+    public GameObject[] animalPrefabs;
 
     public ForestFireCell[,] forestFireCells = new ForestFireCell[0, 0]; // array of ForestFireCell objects
     public ForestFireCell.State[,] forestFireCellsNextGenStates = new ForestFireCell.State[0,0]; // array of cell states to be used in the next generation of the game 
@@ -41,6 +42,9 @@ public class ForestFire3D : MonoBehaviour
     private void Start()
     {
         CreateGrid(gridSizeX, gridSizeY);
+        PlaceAnimals();
+
+
         RandomiseGrid();
         PauseGame(true);
         UpdateGridVisuals();
@@ -302,6 +306,29 @@ public class ForestFire3D : MonoBehaviour
             ySpacing = 0;
             xSpacing += 3;
         }
+    }
+
+    //This function places 5 random animals on the grid as the grid is created
+    private void PlaceAnimals()
+    {
+        
+
+        for (int i = 0; i < 5; i++)
+        {
+
+            int randomCellX = UnityEngine.Random.Range(0, 39);
+            int randomCellY = UnityEngine.Random.Range(0, 39);
+            int randomAnimal = UnityEngine.Random.Range(0, 5);
+
+
+
+
+            Instantiate(animalPrefabs[randomAnimal], cellGameObjects[randomCellY, randomCellX].transform.position, cellGameObjects[randomCellY, randomCellX].transform.rotation);
+            
+
+        }
+
+
     }
 
     // udpate the grid cells according to their current state
