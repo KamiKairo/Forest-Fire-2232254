@@ -42,10 +42,10 @@ public class ForestFire3D : MonoBehaviour
     private void Start()
     {
         CreateGrid(gridSizeX, gridSizeY);
-        PlaceAnimals();
 
 
         RandomiseGrid();
+        PlaceAnimals();
         PauseGame(true);
         UpdateGridVisuals();
     }
@@ -313,17 +313,29 @@ public class ForestFire3D : MonoBehaviour
     {
         
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 15; i++)
         {
-
-            int randomCellX = UnityEngine.Random.Range(0, 39);
-            int randomCellY = UnityEngine.Random.Range(0, 39);
-            int randomAnimal = UnityEngine.Random.Range(0, 5);
+            bool AnimalPlaced = false;
 
 
+            while(AnimalPlaced == false)
+            {
+                // pick a random cell on the grid (0,0 is top left, 39,39 is bottom right)
+                int randomCellX = UnityEngine.Random.Range(0, 39);
+                int randomCellY = UnityEngine.Random.Range(0, 39);
+                int randomAnimal = UnityEngine.Random.Range(0, 5);
+
+                if (forestFireCells[randomCellY, randomCellX].cellState == ForestFireCell.State.Grass)
+                {
+                    Instantiate(animalPrefabs[randomAnimal], cellGameObjects[randomCellY, randomCellX].transform.position, cellGameObjects[randomCellY, randomCellX].transform.rotation);
+                    AnimalPlaced = true;
+                }
+            }
+            
 
 
-            Instantiate(animalPrefabs[randomAnimal], cellGameObjects[randomCellY, randomCellX].transform.position, cellGameObjects[randomCellY, randomCellX].transform.rotation);
+
+            
             
 
         }
