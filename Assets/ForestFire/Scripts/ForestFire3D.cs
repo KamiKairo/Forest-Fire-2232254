@@ -324,7 +324,7 @@ public class ForestFire3D : MonoBehaviour
                 int randomCellX = UnityEngine.Random.Range(0, 39);
                 int randomCellY = UnityEngine.Random.Range(0, 39);
                 int randomAnimal = UnityEngine.Random.Range(0, 5);
-
+                //checks if the cell is grass before placing an animal
                 if (forestFireCells[randomCellY, randomCellX].cellState == ForestFireCell.State.Grass)
                 {
                     Instantiate(animalPrefabs[randomAnimal], cellGameObjects[randomCellY, randomCellX].transform.position, cellGameObjects[randomCellY, randomCellX].transform.rotation);
