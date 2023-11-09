@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -19,17 +20,18 @@ public class Health : MonoBehaviour
 
     
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        
 
         if(isOnFire)
         {
@@ -45,7 +47,7 @@ public class Health : MonoBehaviour
             }
         }
 
-        if(currentHealth <= 0)
+        if (gameObject.tag == "Animal" && (currentHealth <= 0))
         {
             Destroy(gameObject);
         }
