@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 1675379420511139991}
   - component: {fileID: 2762767930264375119}
   - component: {fileID: 7326753058825513142}
+  - component: {fileID: 7634303677562451721}
   m_Layer: 0
   m_Name: Taipan
   m_TagString: Animal
@@ -530,11 +531,11 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5442504493887559991}
-  - screenRelativeHeight: 0.35
+  - screenRelativeHeight: 0.0016703036
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 2311683543228773735}
-  - screenRelativeHeight: 0.05
+  - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 8319246735976726104}
@@ -626,6 +627,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &7634303677562451721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807929556901506227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ba1d19246e9a54a86c87eaff890090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 0}
+  Bonus: 1
 --- !u!1 &5062559287153234616
 GameObject:
   m_ObjectHideFlags: 0

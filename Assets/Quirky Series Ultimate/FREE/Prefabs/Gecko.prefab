@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 6733924846901511934}
   - component: {fileID: 2405374805666101467}
   - component: {fileID: -2013080965846228180}
+  - component: {fileID: 3339106651630591278}
   m_Layer: 0
   m_Name: Gecko
   m_TagString: Animal
@@ -443,11 +444,11 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 8559419522789089425}
-  - screenRelativeHeight: 0.35
+  - screenRelativeHeight: 0.0018576375
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5606088340822068240}
-  - screenRelativeHeight: 0.05
+  - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5208326688331984742}
@@ -539,6 +540,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &3339106651630591278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842458599697738422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ba1d19246e9a54a86c87eaff890090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 0}
+  Bonus: 1
 --- !u!1 &7657876676996022963
 GameObject:
   m_ObjectHideFlags: 0

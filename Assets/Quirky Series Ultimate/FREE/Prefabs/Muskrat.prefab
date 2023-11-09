@@ -588,6 +588,7 @@ GameObject:
   - component: {fileID: 4012879071762434142}
   - component: {fileID: -8249023330950957463}
   - component: {fileID: 5007429351895210249}
+  - component: {fileID: 801607071730685361}
   m_Layer: 0
   m_Name: Muskrat
   m_TagString: Animal
@@ -637,11 +638,11 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1406279802891701164}
-  - screenRelativeHeight: 0.35
+  - screenRelativeHeight: 0.0013146865
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4270041227475897231}
-  - screenRelativeHeight: 0.05
+  - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 2440770264923454510}
@@ -733,6 +734,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &801607071730685361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950779065795438720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ba1d19246e9a54a86c87eaff890090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 0}
+  Bonus: 1
 --- !u!1 &7460354150513945985
 GameObject:
   m_ObjectHideFlags: 0

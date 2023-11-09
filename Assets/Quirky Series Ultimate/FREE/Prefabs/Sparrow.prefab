@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 6624900080179000103}
   - component: {fileID: 2325054025768050575}
   - component: {fileID: -346956540690718508}
+  - component: {fileID: 8598332249130455571}
   m_Layer: 0
   m_Name: Sparrow
   m_TagString: Animal
@@ -495,19 +496,19 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.95
+  - screenRelativeHeight: 0.6109187
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6788538757856321318}
-  - screenRelativeHeight: 0.7
+  - screenRelativeHeight: 0.42200983
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6788538757959556192}
-  - screenRelativeHeight: 0.35
+  - screenRelativeHeight: 0.0020513218
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6788538756691347373}
-  - screenRelativeHeight: 0.05
+  - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6788538756395232118}
@@ -622,6 +623,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &8598332249130455571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788538757290762323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ba1d19246e9a54a86c87eaff890090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 0}
+  Bonus: 1
 --- !u!1 &6788538757856321312
 GameObject:
   m_ObjectHideFlags: 0
