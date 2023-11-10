@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
 
     public float fireTimer;
 
-    public float damageTime = 1;
+    public float damageTime = 0.5f;
 
     
 

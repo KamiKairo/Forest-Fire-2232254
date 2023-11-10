@@ -18,7 +18,7 @@ public class RescuePoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = currentRescuePoints.ToString();
+        scoreText.text = "Animals Rescued " + currentRescuePoints.ToString();
 
         if (currentRescuePoints >= 5)
         {
