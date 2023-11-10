@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Health : MonoBehaviour
 {
@@ -18,9 +19,10 @@ public class Health : MonoBehaviour
 
     public float damageTime = 0.5f;
 
-    
+    public GameState gameState;
 
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,11 @@ public class Health : MonoBehaviour
         if (gameObject.tag == "Animal" && (currentHealth <= 0))
         {
             Destroy(gameObject);
+        }
+        if(gameObject.tag == "Player" && (currentHealth <= 0))
+        {
+            gameState.sceneToLoadTo = "EndingScreenDeath";
+            gameState.StartCoroutine("FadeOutAndChnageScene");
         }
 
     }

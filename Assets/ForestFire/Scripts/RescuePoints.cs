@@ -9,6 +9,8 @@ public class RescuePoints : MonoBehaviour
     public float currentRescuePoints;
     public TMP_Text scoreText;
 
+    public GameState gameState;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,8 @@ public class RescuePoints : MonoBehaviour
 
         if (currentRescuePoints >= 5)
         {
-
+            gameState.sceneToLoadTo = "EndingScreenWon";
+            gameState.StartCoroutine("FadeOutAndChnageScene");
 
             scoreText.text = ("you win");
         }

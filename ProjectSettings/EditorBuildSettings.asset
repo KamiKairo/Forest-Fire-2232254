@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ForestFire/Scenes/ForestFire3D.unity
     guid: bdfaffa30ba9dc844afffb78261241c8
+  - enabled: 1
+    path: Assets/ForestFire/Scenes/EndingScreenWon.unity
+    guid: fbe9266f5b5f17b4eb26c1d66d22c967
+  - enabled: 1
+    path: Assets/ForestFire/Scenes/EndingScreenDeath.unity
+    guid: 60078b0fea1ffb142854bed686d606c2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cc9d5552ba6b55642b1f810556cfdcdf,
       type: 2}
