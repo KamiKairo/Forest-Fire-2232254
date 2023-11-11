@@ -313,7 +313,7 @@ public class ForestFire3D : MonoBehaviour
     {
         
         //iterates through the array of animal prefabs and places them on the grid randomly
-        for (int i = 0; i < 25; i++)
+        for (int i = 0; i < 17; i++)
         {
             bool AnimalPlaced = false;
 
