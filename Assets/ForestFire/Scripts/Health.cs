@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         
-
+        //checks if the player/animal is on fire and if it is, it will damage the player/animal
         if(isOnFire)
         {
             if(fireTimer > damageTime)
@@ -48,11 +48,12 @@ public class Health : MonoBehaviour
                 fireTimer += Time.deltaTime;
             }
         }
-
+        //death check
         if (gameObject.tag == "Animal" && (currentHealth <= 0))
         {
             Destroy(gameObject);
         }
+        //death check with scene change
         if(gameObject.tag == "Player" && (currentHealth <= 0))
         {
             gameState.sceneToLoadTo = "EndingScreenDeath";

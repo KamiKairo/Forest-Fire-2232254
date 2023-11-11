@@ -312,12 +312,12 @@ public class ForestFire3D : MonoBehaviour
     private void PlaceAnimals()
     {
         
-
+        //iterates through the array of animal prefabs and places them on the grid randomly
         for (int i = 0; i < 25; i++)
         {
             bool AnimalPlaced = false;
 
-
+            //loops until an animal is placed
             while(AnimalPlaced == false)
             {
                 // pick a random cell on the grid (0,0 is top left, 39,39 is bottom right)
@@ -326,7 +326,7 @@ public class ForestFire3D : MonoBehaviour
                 int randomAnimal = UnityEngine.Random.Range(0, 5);//picks a random animal from the array of animal prefabs
                 //checks if the cell is grass before placing an animal
                 if (forestFireCells[randomCellY, randomCellX].cellState == ForestFireCell.State.Grass)
-                {
+                {//places the animal on the grid
                     Instantiate(animalPrefabs[randomAnimal], cellGameObjects[randomCellY, randomCellX].transform.position, cellGameObjects[randomCellY, randomCellX].transform.rotation);
                     AnimalPlaced = true;
                 }

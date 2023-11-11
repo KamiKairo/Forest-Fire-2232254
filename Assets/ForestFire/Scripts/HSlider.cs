@@ -14,16 +14,16 @@ public class HSlider : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   //sets the max value of the health slider to the max health of the player
         healthSlider.maxValue = health.maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //sets the health slider to the current health of the player
         healthSlider.value = health.currentHealth;
-
+        //changes the color of the health slider depending on the current health of the player
         if (health.currentHealth >= (health.maxHealth / 2))
         {
             healthSliderFill.color = Color.green;

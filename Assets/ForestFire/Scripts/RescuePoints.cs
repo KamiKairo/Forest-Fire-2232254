@@ -13,15 +13,15 @@ public class RescuePoints : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   //sets the start rescue points to 0
         currentRescuePoints = 0;
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   //outputs the current rescue points to the screen
         scoreText.text = "Animals Rescued " + currentRescuePoints.ToString();
-
+        //checks if the player has rescued 5 animals and if it has, it will change the scene to the win screen
         if (currentRescuePoints >= 5)
         {
             gameState.sceneToLoadTo = "EndingScreenWon";
